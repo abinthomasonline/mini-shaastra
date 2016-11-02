@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Learn Angular JS
+			</title>
+		</head>
+
+		<body>
+			<div ng-app="myApp" ng-init="person = {'name': 'John', 'age': 30};">
+				<h1>Angular JS Expressions</h1>
+				
+				{{ person.name }}
+
+			</div>
+
+			<script src="angular.min.js"></script>
+			<script type="text/javascript">
+				var app = angular.module('myApp', []);
+			</script>
+		</body>
+	</html>

@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Learn Angular JS
+			</title>
+		</head>
+
+		<body>
+			<div ng-app="myApp" ng-controller="MyCtrl">
+				<h1>Angular JS Controllers</h1>
+
+				<p>{{firstName + ' ' + lastName}}</p>
+
+			</div>
+
+			<script src="angular.min.js"></script>
+			<script type="text/javascript">
+				var app = angular.module('myApp', []);
+				app.controller('MyCtrl', function($scope) {
+				    $scope.firstName = "John";
+				    $scope.lastName = "Benny";
+				});
+			</script>
+		</body>
+	</html>

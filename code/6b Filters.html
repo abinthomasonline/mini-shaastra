@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Learn Angular JS
+			</title>
+		</head>
+
+		<body>
+			<div ng-app="myApp" ng-init="text='Hello';">
+				<h1>Angular JS Filters</h1>
+				
+				{{ text | lowercase }}
+
+			</div>
+
+			<script src="angular.min.js"></script>
+			<script type="text/javascript">
+				var app = angular.module('myApp', []);
+			</script>
+		</body>
+	</html>

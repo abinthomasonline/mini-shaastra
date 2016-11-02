@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Learn Angular JS
+			</title>
+		</head>
+
+		<body>
+			<div ng-app="myApp"  ng-init="persons = [{name: 'John', country: 'India'}, {name: 'Jose', country: 'UAE'}, {name: 'Dan', country: 'America'}];">
+				<h1>Angular JS Filters</h1>
+
+				<p ng-repeat="p in persons | filter: 'Jo'">{{p.name + ', ' + p.country}}</p>
+
+			</div>
+
+			<script src="angular.min.js"></script>
+			<script type="text/javascript">
+				var app = angular.module('myApp', []);
+			</script>
+		</body>
+	</html>

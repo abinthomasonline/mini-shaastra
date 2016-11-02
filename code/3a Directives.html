@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Learn Angular JS
+			</title>
+		</head>
+
+		<body>
+			<div ng-app="myApp" ng-init="text='Hello World!'">
+				<h1>Angular JS Directives</h1>
+				
+				<p>ng-bind is an alternative to expressions</p>
+
+				<p ng-bind="text"></p>
+				<p>{{text}}</p>
+
+			</div>
+
+			<script src="angular.min.js"></script>
+			<script type="text/javascript">
+				var app = angular.module('myApp', []);
+			</script>
+		</body>
+	</html>
